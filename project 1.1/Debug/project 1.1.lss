@@ -1,0 +1,501 @@
+
+project 1.1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000002f0  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  00000344  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .comment      00000030  00000000  00000000  00000344  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000374  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 000000a8  00000000  00000000  000003b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000b52  00000000  00000000  00000458  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000834  00000000  00000000  00000faa  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000006da  00000000  00000000  000017de  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000120  00000000  00000000  00001eb8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000041d  00000000  00000000  00001fd8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000505  00000000  00000000  000023f5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000078  00000000  00000000  000028fa  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 a2 00 	jmp	0x144	; 0x144 <__ctors_end>
+   4:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+   8:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+   c:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  10:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  14:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  18:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  1c:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  20:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  24:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  28:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  2c:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  30:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  34:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  38:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  3c:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  40:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  44:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  48:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  4c:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  50:	0c 94 b4 00 	jmp	0x168	; 0x168 <__bad_interrupt>
+  54:	f7 00       	.word	0x00f7	; ????
+  56:	f1 00       	.word	0x00f1	; ????
+  58:	c0 00       	.word	0x00c0	; ????
+  5a:	0b 01       	movw	r0, r22
+  5c:	c0 00       	.word	0x00c0	; ????
+  5e:	c0 00       	.word	0x00c0	; ????
+  60:	c0 00       	.word	0x00c0	; ????
+  62:	07 01       	movw	r0, r14
+  64:	c0 00       	.word	0x00c0	; ????
+  66:	c0 00       	.word	0x00c0	; ????
+  68:	c0 00       	.word	0x00c0	; ????
+  6a:	c0 00       	.word	0x00c0	; ????
+  6c:	c0 00       	.word	0x00c0	; ????
+  6e:	c0 00       	.word	0x00c0	; ????
+  70:	c0 00       	.word	0x00c0	; ????
+  72:	c0 00       	.word	0x00c0	; ????
+  74:	f9 00       	.word	0x00f9	; ????
+  76:	f3 00       	.word	0x00f3	; ????
+  78:	c0 00       	.word	0x00c0	; ????
+  7a:	ef 00       	.word	0x00ef	; ????
+  7c:	c0 00       	.word	0x00c0	; ????
+  7e:	c0 00       	.word	0x00c0	; ????
+  80:	c0 00       	.word	0x00c0	; ????
+  82:	09 01       	movw	r0, r18
+  84:	c0 00       	.word	0x00c0	; ????
+  86:	c0 00       	.word	0x00c0	; ????
+  88:	c0 00       	.word	0x00c0	; ????
+  8a:	c0 00       	.word	0x00c0	; ????
+  8c:	c0 00       	.word	0x00c0	; ????
+  8e:	c0 00       	.word	0x00c0	; ????
+  90:	c0 00       	.word	0x00c0	; ????
+  92:	c0 00       	.word	0x00c0	; ????
+  94:	c0 00       	.word	0x00c0	; ????
+  96:	c0 00       	.word	0x00c0	; ????
+  98:	c0 00       	.word	0x00c0	; ????
+  9a:	c0 00       	.word	0x00c0	; ????
+  9c:	c0 00       	.word	0x00c0	; ????
+  9e:	c0 00       	.word	0x00c0	; ????
+  a0:	c0 00       	.word	0x00c0	; ????
+  a2:	c0 00       	.word	0x00c0	; ????
+  a4:	c0 00       	.word	0x00c0	; ????
+  a6:	c0 00       	.word	0x00c0	; ????
+  a8:	c0 00       	.word	0x00c0	; ????
+  aa:	c0 00       	.word	0x00c0	; ????
+  ac:	c0 00       	.word	0x00c0	; ????
+  ae:	c0 00       	.word	0x00c0	; ????
+  b0:	c0 00       	.word	0x00c0	; ????
+  b2:	c0 00       	.word	0x00c0	; ????
+  b4:	fb 00       	.word	0x00fb	; ????
+  b6:	f5 00       	.word	0x00f5	; ????
+  b8:	c0 00       	.word	0x00c0	; ????
+  ba:	0d 01       	movw	r0, r26
+  bc:	c0 00       	.word	0x00c0	; ????
+  be:	c0 00       	.word	0x00c0	; ????
+  c0:	c0 00       	.word	0x00c0	; ????
+  c2:	05 01       	movw	r0, r10
+  c4:	c0 00       	.word	0x00c0	; ????
+  c6:	c0 00       	.word	0x00c0	; ????
+  c8:	c0 00       	.word	0x00c0	; ????
+  ca:	c0 00       	.word	0x00c0	; ????
+  cc:	c0 00       	.word	0x00c0	; ????
+  ce:	c0 00       	.word	0x00c0	; ????
+  d0:	c0 00       	.word	0x00c0	; ????
+  d2:	c0 00       	.word	0x00c0	; ????
+  d4:	c0 00       	.word	0x00c0	; ????
+  d6:	c0 00       	.word	0x00c0	; ????
+  d8:	c0 00       	.word	0x00c0	; ????
+  da:	c0 00       	.word	0x00c0	; ????
+  dc:	c0 00       	.word	0x00c0	; ????
+  de:	c0 00       	.word	0x00c0	; ????
+  e0:	c0 00       	.word	0x00c0	; ????
+  e2:	c0 00       	.word	0x00c0	; ????
+  e4:	c0 00       	.word	0x00c0	; ????
+  e6:	c0 00       	.word	0x00c0	; ????
+  e8:	c0 00       	.word	0x00c0	; ????
+  ea:	c0 00       	.word	0x00c0	; ????
+  ec:	c0 00       	.word	0x00c0	; ????
+  ee:	c0 00       	.word	0x00c0	; ????
+  f0:	c0 00       	.word	0x00c0	; ????
+  f2:	c0 00       	.word	0x00c0	; ????
+  f4:	c0 00       	.word	0x00c0	; ????
+  f6:	c0 00       	.word	0x00c0	; ????
+  f8:	c0 00       	.word	0x00c0	; ????
+  fa:	c0 00       	.word	0x00c0	; ????
+  fc:	c0 00       	.word	0x00c0	; ????
+  fe:	c0 00       	.word	0x00c0	; ????
+ 100:	c0 00       	.word	0x00c0	; ????
+ 102:	c0 00       	.word	0x00c0	; ????
+ 104:	c0 00       	.word	0x00c0	; ????
+ 106:	c0 00       	.word	0x00c0	; ????
+ 108:	c0 00       	.word	0x00c0	; ????
+ 10a:	c0 00       	.word	0x00c0	; ????
+ 10c:	c0 00       	.word	0x00c0	; ????
+ 10e:	c0 00       	.word	0x00c0	; ????
+ 110:	c0 00       	.word	0x00c0	; ????
+ 112:	c0 00       	.word	0x00c0	; ????
+ 114:	c0 00       	.word	0x00c0	; ????
+ 116:	c0 00       	.word	0x00c0	; ????
+ 118:	c0 00       	.word	0x00c0	; ????
+ 11a:	c0 00       	.word	0x00c0	; ????
+ 11c:	c0 00       	.word	0x00c0	; ????
+ 11e:	c0 00       	.word	0x00c0	; ????
+ 120:	c0 00       	.word	0x00c0	; ????
+ 122:	c0 00       	.word	0x00c0	; ????
+ 124:	c0 00       	.word	0x00c0	; ????
+ 126:	c0 00       	.word	0x00c0	; ????
+ 128:	c0 00       	.word	0x00c0	; ????
+ 12a:	c0 00       	.word	0x00c0	; ????
+ 12c:	c0 00       	.word	0x00c0	; ????
+ 12e:	c0 00       	.word	0x00c0	; ????
+ 130:	c0 00       	.word	0x00c0	; ????
+ 132:	c0 00       	.word	0x00c0	; ????
+ 134:	fd 00       	.word	0x00fd	; ????
+ 136:	ff 00       	.word	0x00ff	; ????
+ 138:	c0 00       	.word	0x00c0	; ????
+ 13a:	01 01       	movw	r0, r2
+ 13c:	c0 00       	.word	0x00c0	; ????
+ 13e:	c0 00       	.word	0x00c0	; ????
+ 140:	c0 00       	.word	0x00c0	; ????
+ 142:	03 01       	movw	r0, r6
+
+00000144 <__ctors_end>:
+ 144:	11 24       	eor	r1, r1
+ 146:	1f be       	out	0x3f, r1	; 63
+ 148:	cf e5       	ldi	r28, 0x5F	; 95
+ 14a:	d8 e0       	ldi	r29, 0x08	; 8
+ 14c:	de bf       	out	0x3e, r29	; 62
+ 14e:	cd bf       	out	0x3d, r28	; 61
+
+00000150 <__do_clear_bss>:
+ 150:	20 e0       	ldi	r18, 0x00	; 0
+ 152:	a0 e6       	ldi	r26, 0x60	; 96
+ 154:	b0 e0       	ldi	r27, 0x00	; 0
+ 156:	01 c0       	rjmp	.+2      	; 0x15a <.do_clear_bss_start>
+
+00000158 <.do_clear_bss_loop>:
+ 158:	1d 92       	st	X+, r1
+
+0000015a <.do_clear_bss_start>:
+ 15a:	a0 36       	cpi	r26, 0x60	; 96
+ 15c:	b2 07       	cpc	r27, r18
+ 15e:	e1 f7       	brne	.-8      	; 0x158 <.do_clear_bss_loop>
+ 160:	0e 94 5f 01 	call	0x2be	; 0x2be <main>
+ 164:	0c 94 76 01 	jmp	0x2ec	; 0x2ec <_exit>
+
+00000168 <__bad_interrupt>:
+ 168:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000016c <get_from_keypad>:
+ return keyPressed;
+		}
+ 
+ 
+ void wait_for_press(void)
+ {
+ 16c:	cf 93       	push	r28
+ 16e:	df 93       	push	r29
+ 170:	8f e0       	ldi	r24, 0x0F	; 15
+ 172:	8a bb       	out	0x1a, r24	; 26
+ 174:	8b bb       	out	0x1b, r24	; 27
+ 176:	20 e0       	ldi	r18, 0x00	; 0
+ 178:	30 e0       	ldi	r19, 0x00	; 0
+ 17a:	4f e0       	ldi	r20, 0x0F	; 15
+ 17c:	c1 e0       	ldi	r28, 0x01	; 1
+ 17e:	d0 e0       	ldi	r29, 0x00	; 0
+ 180:	4a bb       	out	0x1a, r20	; 26
+ 182:	4b bb       	out	0x1b, r20	; 27
+ 184:	83 ec       	ldi	r24, 0xC3	; 195
+ 186:	99 e0       	ldi	r25, 0x09	; 9
+ 188:	01 97       	sbiw	r24, 0x01	; 1
+ 18a:	f1 f7       	brne	.-4      	; 0x188 <get_from_keypad+0x1c>
+ 18c:	00 c0       	rjmp	.+0      	; 0x18e <get_from_keypad+0x22>
+ 18e:	00 00       	nop
+ 190:	b9 01       	movw	r22, r18
+ 192:	6f 5f       	subi	r22, 0xFF	; 255
+ 194:	7f 4f       	sbci	r23, 0xFF	; 255
+ 196:	ce 01       	movw	r24, r28
+ 198:	02 c0       	rjmp	.+4      	; 0x19e <get_from_keypad+0x32>
+ 19a:	88 0f       	add	r24, r24
+ 19c:	99 1f       	adc	r25, r25
+ 19e:	2a 95       	dec	r18
+ 1a0:	e2 f7       	brpl	.-8      	; 0x19a <get_from_keypad+0x2e>
+ 1a2:	8b bb       	out	0x1b, r24	; 27
+ 1a4:	a3 ec       	ldi	r26, 0xC3	; 195
+ 1a6:	b9 e0       	ldi	r27, 0x09	; 9
+ 1a8:	11 97       	sbiw	r26, 0x01	; 1
+ 1aa:	f1 f7       	brne	.-4      	; 0x1a8 <get_from_keypad+0x3c>
+ 1ac:	00 c0       	rjmp	.+0      	; 0x1ae <get_from_keypad+0x42>
+ 1ae:	00 00       	nop
+ 1b0:	eb b3       	in	r30, 0x1b	; 27
+ 1b2:	89 b3       	in	r24, 0x19	; 25
+ 1b4:	a7 e8       	ldi	r26, 0x87	; 135
+ 1b6:	b3 e1       	ldi	r27, 0x13	; 19
+ 1b8:	11 97       	sbiw	r26, 0x01	; 1
+ 1ba:	f1 f7       	brne	.-4      	; 0x1b8 <get_from_keypad+0x4c>
+ 1bc:	00 c0       	rjmp	.+0      	; 0x1be <get_from_keypad+0x52>
+ 1be:	00 00       	nop
+ 1c0:	9b 01       	movw	r18, r22
+ 1c2:	23 70       	andi	r18, 0x03	; 3
+ 1c4:	33 27       	eor	r19, r19
+ 1c6:	e8 2b       	or	r30, r24
+ 1c8:	8e 2f       	mov	r24, r30
+ 1ca:	90 e0       	ldi	r25, 0x00	; 0
+ 1cc:	fc 01       	movw	r30, r24
+ 1ce:	71 97       	sbiw	r30, 0x11	; 17
+ 1d0:	e8 37       	cpi	r30, 0x78	; 120
+ 1d2:	f1 05       	cpc	r31, r1
+ 1d4:	a8 f6       	brcc	.-86     	; 0x180 <get_from_keypad+0x14>
+ 1d6:	e6 5d       	subi	r30, 0xD6	; 214
+ 1d8:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1da:	0c 94 70 01 	jmp	0x2e0	; 0x2e0 <__tablejump2__>
+ 1de:	82 e3       	ldi	r24, 0x32	; 50
+ 1e0:	1d c0       	rjmp	.+58     	; 0x21c <get_from_keypad+0xb0>
+ 1e2:	84 e3       	ldi	r24, 0x34	; 52
+ 1e4:	1b c0       	rjmp	.+54     	; 0x21c <get_from_keypad+0xb0>
+ 1e6:	85 e3       	ldi	r24, 0x35	; 53
+ 1e8:	19 c0       	rjmp	.+50     	; 0x21c <get_from_keypad+0xb0>
+ 1ea:	86 e3       	ldi	r24, 0x36	; 54
+ 1ec:	17 c0       	rjmp	.+46     	; 0x21c <get_from_keypad+0xb0>
+ 1ee:	87 e3       	ldi	r24, 0x37	; 55
+ 1f0:	15 c0       	rjmp	.+42     	; 0x21c <get_from_keypad+0xb0>
+ 1f2:	88 e3       	ldi	r24, 0x38	; 56
+ 1f4:	13 c0       	rjmp	.+38     	; 0x21c <get_from_keypad+0xb0>
+ 1f6:	89 e3       	ldi	r24, 0x39	; 57
+ 1f8:	11 c0       	rjmp	.+34     	; 0x21c <get_from_keypad+0xb0>
+ 1fa:	8f e2       	ldi	r24, 0x2F	; 47
+ 1fc:	0f c0       	rjmp	.+30     	; 0x21c <get_from_keypad+0xb0>
+ 1fe:	8a e2       	ldi	r24, 0x2A	; 42
+ 200:	0d c0       	rjmp	.+26     	; 0x21c <get_from_keypad+0xb0>
+ 202:	8d e2       	ldi	r24, 0x2D	; 45
+ 204:	0b c0       	rjmp	.+22     	; 0x21c <get_from_keypad+0xb0>
+ 206:	8b e2       	ldi	r24, 0x2B	; 43
+ 208:	09 c0       	rjmp	.+18     	; 0x21c <get_from_keypad+0xb0>
+ 20a:	8d e3       	ldi	r24, 0x3D	; 61
+ 20c:	07 c0       	rjmp	.+14     	; 0x21c <get_from_keypad+0xb0>
+ 20e:	86 e4       	ldi	r24, 0x46	; 70
+ 210:	05 c0       	rjmp	.+10     	; 0x21c <get_from_keypad+0xb0>
+ 212:	80 e3       	ldi	r24, 0x30	; 48
+ 214:	03 c0       	rjmp	.+6      	; 0x21c <get_from_keypad+0xb0>
+ 216:	81 e3       	ldi	r24, 0x31	; 49
+ 218:	01 c0       	rjmp	.+2      	; 0x21c <get_from_keypad+0xb0>
+ 21a:	83 e3       	ldi	r24, 0x33	; 51
+ 21c:	df 91       	pop	r29
+ 21e:	cf 91       	pop	r28
+ 220:	08 95       	ret
+
+00000222 <get_string_from_keypad>:
+ //while (KB_PORT_IN==0xff){}
+
+ }
+ unsigned char * get_string_from_keypad(void)
+ {
+ 222:	cf 93       	push	r28
+ 224:	df 93       	push	r29
+ 226:	c0 e0       	ldi	r28, 0x00	; 0
+ 228:	d0 e0       	ldi	r29, 0x00	; 0
+	 int i=0;
+	 unsigned char *temp;
+	 while(get_from_keypad()!='=')
+ 22a:	03 c0       	rjmp	.+6      	; 0x232 <get_string_from_keypad+0x10>
+	 {
+		 temp[i]=get_from_keypad();
+ 22c:	0e 94 b6 00 	call	0x16c	; 0x16c <get_from_keypad>
+ 230:	89 93       	st	Y+, r24
+ }
+ unsigned char * get_string_from_keypad(void)
+ {
+	 int i=0;
+	 unsigned char *temp;
+	 while(get_from_keypad()!='=')
+ 232:	0e 94 b6 00 	call	0x16c	; 0x16c <get_from_keypad>
+ 236:	8d 33       	cpi	r24, 0x3D	; 61
+ 238:	c9 f7       	brne	.-14     	; 0x22c <get_string_from_keypad+0xa>
+				//L(temp[i]);
+		 i++;
+	 }
+	 temp='=';
+	 return temp;
+ }
+ 23a:	8d e3       	ldi	r24, 0x3D	; 61
+ 23c:	90 e0       	ldi	r25, 0x00	; 0
+ 23e:	df 91       	pop	r29
+ 240:	cf 91       	pop	r28
+ 242:	08 95       	ret
+
+00000244 <LCD_send_a_character>:
+	LCD_send_a_command(0x01);	// Clear the LCD
+	LCD_send_a_command(0x80);	// Move the Cursor to First line First Position
+}
+void LCD_send_a_character (uint8_t character)
+{
+	PORTD=character;
+ 244:	82 bb       	out	0x12, r24	; 18
+	PORTC|= (1<<RS);
+ 246:	aa 9a       	sbi	0x15, 2	; 21
+	PORTC|= (1<<E);
+ 248:	ac 9a       	sbi	0x15, 4	; 21
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 24a:	83 ed       	ldi	r24, 0xD3	; 211
+ 24c:	90 e3       	ldi	r25, 0x30	; 48
+ 24e:	01 97       	sbiw	r24, 0x01	; 1
+ 250:	f1 f7       	brne	.-4      	; 0x24e <LCD_send_a_character+0xa>
+ 252:	00 c0       	rjmp	.+0      	; 0x254 <LCD_send_a_character+0x10>
+ 254:	00 00       	nop
+	_delay_ms(50);
+	PORTC&= ~(1<<E);
+ 256:	ac 98       	cbi	0x15, 4	; 21
+	PORTA =0;
+ 258:	1b ba       	out	0x1b, r1	; 27
+ 25a:	08 95       	ret
+
+0000025c <LCD_send_a_command>:
+}
+void LCD_send_a_command (uint8_t command)
+{
+	PORTD=command;
+ 25c:	82 bb       	out	0x12, r24	; 18
+	PORTC&= ~(1<<RS);
+ 25e:	aa 98       	cbi	0x15, 2	; 21
+	PORTC|= (1<<E);
+ 260:	ac 9a       	sbi	0x15, 4	; 21
+ 262:	83 ed       	ldi	r24, 0xD3	; 211
+ 264:	90 e3       	ldi	r25, 0x30	; 48
+ 266:	01 97       	sbiw	r24, 0x01	; 1
+ 268:	f1 f7       	brne	.-4      	; 0x266 <LCD_send_a_command+0xa>
+ 26a:	00 c0       	rjmp	.+0      	; 0x26c <LCD_send_a_command+0x10>
+ 26c:	00 00       	nop
+	_delay_ms(50);
+	PORTC&= ~(1<<E);
+ 26e:	ac 98       	cbi	0x15, 4	; 21
+	PORTD =0;
+ 270:	12 ba       	out	0x12, r1	; 18
+ 272:	08 95       	ret
+
+00000274 <LCD_Init>:
+ 274:	83 ed       	ldi	r24, 0xD3	; 211
+ 276:	90 e3       	ldi	r25, 0x30	; 48
+ 278:	01 97       	sbiw	r24, 0x01	; 1
+ 27a:	f1 f7       	brne	.-4      	; 0x278 <LCD_Init+0x4>
+ 27c:	00 c0       	rjmp	.+0      	; 0x27e <LCD_Init+0xa>
+ 27e:	00 00       	nop
+
+
+void LCD_Init()
+{
+	_delay_ms(50);
+	databus_direction = 0xFF;   // Configure both databus and controlbus as output
+ 280:	8f ef       	ldi	r24, 0xFF	; 255
+ 282:	81 bb       	out	0x11, r24	; 17
+	controlbus_direction = 0xFF;
+ 284:	84 bb       	out	0x14, r24	; 20
+	LCD_send_a_command(0x38);   // LCD 2lines, 5*7 matrix
+ 286:	88 e3       	ldi	r24, 0x38	; 56
+ 288:	0e 94 2e 01 	call	0x25c	; 0x25c <LCD_send_a_command>
+	LCD_send_a_command(0x0E);	// Display ON cursor ON
+ 28c:	8e e0       	ldi	r24, 0x0E	; 14
+ 28e:	0e 94 2e 01 	call	0x25c	; 0x25c <LCD_send_a_command>
+	LCD_send_a_command(0x01);	// Clear the LCD
+ 292:	81 e0       	ldi	r24, 0x01	; 1
+ 294:	0e 94 2e 01 	call	0x25c	; 0x25c <LCD_send_a_command>
+	LCD_send_a_command(0x80);	// Move the Cursor to First line First Position
+ 298:	80 e8       	ldi	r24, 0x80	; 128
+ 29a:	0e 94 2e 01 	call	0x25c	; 0x25c <LCD_send_a_command>
+ 29e:	08 95       	ret
+
+000002a0 <LCD_send_a_string>:
+	_delay_ms(50);
+	PORTC&= ~(1<<E);
+	PORTD =0;
+}
+void LCD_send_a_string(uint8_t *ptr_stringPointer_u8)
+{
+ 2a0:	cf 93       	push	r28
+ 2a2:	df 93       	push	r29
+ 2a4:	ec 01       	movw	r28, r24
+	while((*ptr_stringPointer_u8)!='\0')
+ 2a6:	88 81       	ld	r24, Y
+ 2a8:	88 23       	and	r24, r24
+ 2aa:	31 f0       	breq	.+12     	; 0x2b8 <LCD_send_a_string+0x18>
+ 2ac:	21 96       	adiw	r28, 0x01	; 1
+	{
+		LCD_send_a_character(*ptr_stringPointer_u8++); // Loop through the string and display char by char
+ 2ae:	0e 94 22 01 	call	0x244	; 0x244 <LCD_send_a_character>
+	PORTC&= ~(1<<E);
+	PORTD =0;
+}
+void LCD_send_a_string(uint8_t *ptr_stringPointer_u8)
+{
+	while((*ptr_stringPointer_u8)!='\0')
+ 2b2:	89 91       	ld	r24, Y+
+ 2b4:	81 11       	cpse	r24, r1
+ 2b6:	fb cf       	rjmp	.-10     	; 0x2ae <LCD_send_a_string+0xe>
+	{
+		LCD_send_a_character(*ptr_stringPointer_u8++); // Loop through the string and display char by char
+	}
+}
+ 2b8:	df 91       	pop	r29
+ 2ba:	cf 91       	pop	r28
+ 2bc:	08 95       	ret
+
+000002be <main>:
+int main(void) 
+{
+	uint8_t MOTOR_ADDRESS = 0b10011110;
+	//unsigned char a[];
+	initIO();
+	LCD_Init();
+ 2be:	0e 94 3a 01 	call	0x274	; 0x274 <LCD_Init>
+ 2c2:	83 ec       	ldi	r24, 0xC3	; 195
+ 2c4:	99 e0       	ldi	r25, 0x09	; 9
+ 2c6:	01 97       	sbiw	r24, 0x01	; 1
+ 2c8:	f1 f7       	brne	.-4      	; 0x2c6 <main+0x8>
+ 2ca:	00 c0       	rjmp	.+0      	; 0x2cc <main+0xe>
+ 2cc:	00 00       	nop
+	_delay_ms(10);
+	LCD_send_a_string(get_string_from_keypad);
+ 2ce:	81 e1       	ldi	r24, 0x11	; 17
+ 2d0:	91 e0       	ldi	r25, 0x01	; 1
+ 2d2:	0e 94 50 01 	call	0x2a0	; 0x2a0 <LCD_send_a_string>
+	//MOTOR_ROTATE_LEFT();
+	//MOTOR_ROTATE_LEFT();
+	//MOTOR_ROTATE_LEFT();
+	//LCD_send_a_character('a');
+	//MOTOR_ROTATE_RIGHT();
+	LCD_send_a_character(get_from_keypad());
+ 2d6:	0e 94 b6 00 	call	0x16c	; 0x16c <get_from_keypad>
+ 2da:	0e 94 22 01 	call	0x244	; 0x244 <LCD_send_a_character>
+ 2de:	ff cf       	rjmp	.-2      	; 0x2de <main+0x20>
+
+000002e0 <__tablejump2__>:
+ 2e0:	ee 0f       	add	r30, r30
+ 2e2:	ff 1f       	adc	r31, r31
+ 2e4:	05 90       	lpm	r0, Z+
+ 2e6:	f4 91       	lpm	r31, Z
+ 2e8:	e0 2d       	mov	r30, r0
+ 2ea:	09 94       	ijmp
+
+000002ec <_exit>:
+ 2ec:	f8 94       	cli
+
+000002ee <__stop_program>:
+ 2ee:	ff cf       	rjmp	.-2      	; 0x2ee <__stop_program>
